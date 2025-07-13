@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <style>
+      .l {
+            width: 200px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .l:hover a{
+
+            background-color: #e1eedc;
+
+        }
+        @media print{
+        .no-print{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}"> 
+    {% endif %}
+    <p>{{ product.description }}</p>
+    <p>Price: Rs{{ product.price }}</p>
+    <a href="/">Back to Products</a></br>
+    
+    <div class="l">
+        <a href="/buy">Buy Now</a></br>
+<a href="/cart">Add to Cart</a></br>
+    </div>
+    <button onclick="window.print()" class="no-print">Print this page</button>
+</body>
+</html>
