@@ -1,0 +1,14 @@
+  .continer {
+            display:grid;
+            row-gap:50px;
+            grid-template-columns: auto auto auto;
+            background-color: dodgerblue;
+            padding:10px;
+        }
+        .continer > div {
+            background-color: #0febff;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }

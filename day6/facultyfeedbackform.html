@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Feedback Form</title>
+  <script>
+    function you(){
+        alert("this is a test");
+    }
+  </script>
+  <style>
+    .v {
+        background-color: #4CAF50;
+        padding: auto;
+        margin: 5px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .v :hover {
+        background-color: #5f3e8e;
+        margin: 5px;
+
+    }
+    .rating {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+
+  </style>
+</head>
+<body>
+  <form class="v">
+    <h2>Faculty Feedback Form</h2>
+
+    <label for="facultyName">Faculty Name:</label>
+    <input type="text" id="facultyName" name="facultyName">
+
+    <label for="training">Training Attended:</label>
+    <select id="training" name="training">
+      <option value="">-- Select Training --</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Python Programming">Python Programming</option>
+      <option value="Data Science">Data Science</option>
+    </select>
+    
+    <label>Overall Rating:</label>
+    <div class="rating">
+      <input type="radio" id="excellent" name="rating" value="Excellent">
+    <label for="excellent">Excellent</label>
+    <input type="radio" id="good" name="rating" value="Good">
+    <label for="good">Good</label>
+    <input type="radio" id="average" name="rating" value="average">
+    <label for="average">average</label>
+    <input type="radio" id="poor" name="rating" value="Poor">
+    <label for="poor">Poor</label>
+    </div>
+    <label>Topics Covered:</label> 
+    <div class="rating">
+        <Input type="checkbox" id="quality" name="topics" value="Content Quality">
+    <label for="quality">Content Quality</label><br>
+    <input type="checkbox" id="delivery" name="topics" value="Delivery">
+    <label for="delivery">Delivery</label><br>
+    <input type="checkbox" id="interaction" name="topics" value="Interaction">
+    <label for="interaction">Interaction</label><br>
+    <input type="checkbox" id="relevance" name="topics" value="Relevance">
+    <label for="relevance">Relevance
+    </div></label>
+
+    <label for="comments">Suggestions/Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Write your feedback here..."></textarea>
+
+    <button type="submit" onclick="you()" style="color: rgb(255, 0, 157);">Submit Feedback</button>
+  </form>
+</body>
+</html>

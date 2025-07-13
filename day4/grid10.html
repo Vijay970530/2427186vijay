@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: rgb(47, 0, 128);
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color:brown;
+  color: #847373;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><h1> N.Vijay Kumar</h1></div>
+
+  <div class="item2">
+    <ul>
+     <li> skills</li>
+      <li> html</li>
+      <li> css</li>
+      <li> java</li>
+      <li> python</li>
+    </ul>
+</div>
+
+  <div class="item3">
+    <h1>About me</h1>
+    <p>I am pursuing MCA in MTICA college.</p>
+    <p>is located at palamaner 517408.</p>
+    <p></p>
+  </div>  
+
+  <div class="item4">
+    <h2>hobbies:</h2>
+    <ul>
+      <li>cricket</li>
+      <li>vollyball</li>
+      <li>Tennis</li>
+    </ul>
+  </div>
+
+  <div class="item5"><p></p></div>
+  
+</div>
+</body>
+</html>
+

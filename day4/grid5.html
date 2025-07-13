@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1</title>
+    <style> 
+        .continer {
+            display:grid;
+            gap:50px 100px;
+            grid-template-columns: auto auto auto;
+            background-color: dodgerblue;
+            padding:10px;
+        }
+        .continer > div {
+            background-color: #0febff;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <p>A Grid Layout must have a parent element with the 
+    <em>display</em> property set to <em>grid</em> or<em>inline-grid</em>.</p>
+    <p>Dircet child elements(S) of the gird continer automatically becomes gird items.</p>
+    <div class="continer">
+        <div>1</div>
+        <div>2</a></div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    
+</body>
+</html>
